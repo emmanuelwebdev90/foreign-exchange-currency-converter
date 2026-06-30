@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark" id="pps">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles.css">
+    </head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img src="./assets/images/logo.svg" alt="logo">
+            <ul class="nav">
+                <li class="nav-item">
+                    Active
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <section class="nav overflow-hidden live-markets">
+        <span class="live--label">Live Markets</span>
+        <div class="content d-flex align-items-center" id="live-markets">
+            <li class="nav-item live--rates">
+                USD/MX 17.32
+            </li>
+        </div>
+    </section>
+
+
+    <section class="converter">
+        <div class="container">
+            <article>
+                <h3>Converter</h3>
+            </article>
+        </div>
+    </section>
+    <button id="theme_change">
+        cambiar tema
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="./assets/live.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const boton = document.getElementById('theme_change')
+            boton.addEventListener('click', () => {
+                let page = document.getElementById('pps')
+                if (page.dataset.bsTheme == 'dark') {
+                    console.log(page)
+                    page.dataset.bsTheme = 'light'
+                } else {
+                    page.dataset.bsTheme = 'dark'
+                }
+
+
+            })
+        })
+
+    </script>
+</body>
+
+</html>

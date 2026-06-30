@@ -1,0 +1,57 @@
+.live--label {
+    background-color: #CEF739;
+    text-transform: uppercase;
+    padding: 12px 16px;
+    font-size: 12px;
+    color:#000;
+    position: absolute;
+    z-index: 999;
+}
+
+.content {
+    width: auto;
+    font-size: 12px;
+    flex-shrink: 0;
+
+    transform: translateX(50%);
+    animation: bouncing-text 17s ease-in-out infinite alternate;
+}
+
+.content:hover{
+    animation-play-state: paused;
+}
+/* The Magic Loop Animation */
+@keyframes bouncing-text {
+    0% {
+        transform: translateX(15%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.live--rates{
+    border-right: solid 1px #9d9d9d;
+    border-left: solid 1px #9d9d9d;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:5px;
+}
+
+.live-markets{
+    position:relative;
+}
+.currencies--label{
+
+    color: #9d9d9d;
+}
+
+.green{
+    color : #42EB05;
+}
+
+.red {
+    color: #FF4141;
+}
