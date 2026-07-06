@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const today = `${dateNow.getFullYear()}-${dateNow.getMonth()}-${dateNow.getDate()}`
     const yest = `${yesterday.getFullYear()}-${yesterday.getMonth()}-${yesterday.getDate() - 1}`
-    const ApiRange = `https://api.frankfurter.dev/v2/rates?from=${yest}&to=${today}&base=EUR&quotes=MXN,USD,GBP,JPY,CAD`;
+    const ApiRange = `https://api.frankfurter.dev/v2/rates?from=${yest}&to=${today}&base=USD&quotes=MXN,EUR,GBP,JPY,CAD`;
     async function GetLatest(Api) {
 
         let response = await fetch(ApiRange)

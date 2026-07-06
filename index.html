@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles.css">
-    </head>
+</head>
 
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -18,7 +18,7 @@
                 <li class="nav-item">
                     Active
                 </li>
-                
+
             </ul>
         </div>
     </nav>
@@ -32,38 +32,48 @@
     </section>
 
 
-    <section class="converter">
-        <div class="container">
-            <article>
-                <h3>Converter</h3>
-            </article>
-        </div>
-    </section>
-    <button id="theme_change">
-        cambiar tema
-    </button>
+
+    <div class="container mt-3 mb-5">
+        <section class="converter-wrapper">
+            <span>Check the rate</span>
+            <div class="top-container d-flex justify-content-between mt-2">
+                <div class="cont">
+                    <div class="first-container">
+                        <span>Send</span>
+                    </div>
+                    <div class="second-container mt-2">
+                        <input type='number' min="0" max="9999" step="any">
+                        <select>
+                            <option value="EUR">EUR EURO</option>
+                            <option value="USD">USD DOLLAR</option>
+                            <option value="MXN">MXN PESO MXN</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <div class="second-container">
+                        <span>Receive</span>
+                    </div>
+                    <div class="second-container mt-2">
+                        <input type='number' min="0" max="9999" step="any">
+                        <select>
+                            <option value="EUR">EUR EURO</option>
+                            <option value="USD">USD DOLLAR</option>
+                            <option value="MXN">MXN PESO MXN</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="./assets/live.js"></script>
-    <script>
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const boton = document.getElementById('theme_change')
-            boton.addEventListener('click', () => {
-                let page = document.getElementById('pps')
-                if (page.dataset.bsTheme == 'dark') {
-                    console.log(page)
-                    page.dataset.bsTheme = 'light'
-                } else {
-                    page.dataset.bsTheme = 'dark'
-                }
-
-
-            })
-        })
-
-    </script>
+  
 </body>
 
 </html>

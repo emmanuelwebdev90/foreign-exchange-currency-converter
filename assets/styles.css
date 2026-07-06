@@ -1,3 +1,8 @@
+body {
+    background-color: #0a0a0a;
+    color: #fff;
+
+}
 .live--label {
     background-color: #CEF739;
     text-transform: uppercase;
@@ -54,4 +59,16 @@
 
 .red {
     color: #FF4141;
+}
+
+.top-container{
+    background-color: #171719;
+    padding:20px;
+    border-radius:15px;
+}
+.cont{
+    padding:20px;
+    background-color: #202022;
+    border-radius:13px;
+    border: 1px solid #2e2e2e;
 }
