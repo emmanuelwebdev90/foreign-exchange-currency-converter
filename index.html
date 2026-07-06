@@ -42,10 +42,10 @@
                         <span>Send</span>
                     </div>
                     <div class="second-container mt-2">
-                        <input type='number' min="0" max="9999" step="any">
-                        <select>
-                            <option value="EUR">EUR EURO</option>
+                        <input type='number' min="0" max="9999" id='input_send' step="any">
+                        <select id='select_send'>
                             <option value="USD">USD DOLLAR</option>
+                            <option value="EUR">EUR EURO</option>
                             <option value="MXN">MXN PESO MXN</option>
                         </select>
                     </div>
@@ -56,11 +56,11 @@
                         <span>Receive</span>
                     </div>
                     <div class="second-container mt-2">
-                        <input type='number' min="0" max="9999" step="any">
-                        <select>
+                        <input type='number' min="0" max="9999" id='input_receive' step="any">
+                        <select id="select_receive">
+                            <option value="MXN">MXN PESO MXN</option>
                             <option value="EUR">EUR EURO</option>
                             <option value="USD">USD DOLLAR</option>
-                            <option value="MXN">MXN PESO MXN</option>
                         </select>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="./assets/live.js"></script>
-  
+    <script src="./assets/converter.js"></script>
 </body>
 
 </html>

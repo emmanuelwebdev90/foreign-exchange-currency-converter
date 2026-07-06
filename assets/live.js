@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
             actual.innerHTML = element.history[1].rate
             arrow_icon.innerHTML = arrow
             change.innerHTML = `${((variacion / element.history[1].rate) * 100).toFixed(2)}%`
-            console.log(actual)
+            // console.log(actual)
             item.appendChild(label)
             item.appendChild(actual)
             item.append(arrow_icon)
